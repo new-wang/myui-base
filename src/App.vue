@@ -4,6 +4,9 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 import Test from './components/test.tsx'
+const oncclick=()=>{
+  console.log(123)
+}
 </script>
 
 <template>
@@ -12,8 +15,16 @@ import Test from './components/test.tsx'
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
 
 
-  <Test></Test>
+  <Test @click="oncclick">
+    <template #default>
+      默认插槽
+    </template>
+    <template #title>
+      title插槽
+    </template>
+  </Test>
 
+  
 </template>
 
 <style>
