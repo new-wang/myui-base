@@ -35,9 +35,34 @@ const confirm = () => {
   4、块级block
   5、iconbutton -->
   
-  <SButton type="primary" block size="small">确定</SButton>
-  <SButton type="primary" size="medium" disabled @click="confirm">确定</SButton>
-  <SButton type="primary" size="large" @click="confirm">确定</SButton>
+  <div>
+    <SButton type="primary">确定</SButton>
+    <SButton type="secondary">取消</SButton>
+    <SButton type="text">文本</SButton>
+  </div>
+  <div>
+    <SButton type="primary" size="small">small</SButton>
+    <SButton type="primary" size="medium">medium</SButton>
+    <SButton type="primary" size="large">large</SButton>
+  </div>
+  <div>
+    <SButton type="secondary" size="small">small</SButton>
+    <SButton type="secondary" size="medium">medium</SButton>
+    <SButton type="secondary" size="large">large</SButton>
+  </div>
+  <div>
+    <SButton type="primary" @click="confirm">确定</SButton>
+    <SButton type="primary" disabled @click="confirm">disabled</SButton>
+  </div>
+  <div>
+    <SButton type="text" >确定</SButton>
+    <SButton type="text" disabled>disabled</SButton>
+  </div>
+  <div>
+    <SButton type="primary" block>Confirm</SButton>
+    <SButton type="secondary" block>Cancel</SButton>
+  </div>
+
 </template>
 
 <style>
