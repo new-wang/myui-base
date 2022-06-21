@@ -7,6 +7,11 @@ import Test from './components/test.tsx'
 const oncclick=()=>{
   console.log(123)
 }
+
+const confirm = () => {
+  console.log('confirm !!!!');
+}
+
 </script>
 
 <template>
@@ -31,8 +36,8 @@ const oncclick=()=>{
   5、iconbutton -->
   
   <SButton type="primary" size="small">确定</SButton>
-  <SButton type="primary" size="medium">确定</SButton>
-  <SButton type="primary" size="large">确定</SButton>
+  <SButton type="primary" size="medium" disabled @click="confirm">确定</SButton>
+  <SButton type="primary" size="large" @click="confirm">确定</SButton>
 </template>
 
 <style>

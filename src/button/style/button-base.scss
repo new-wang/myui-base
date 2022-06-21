@@ -25,6 +25,7 @@
 
   // 禁用状态
   &[disabled] {
+    // cursor: not-allowed;
     @apply cursor-not-allowed
   }
   

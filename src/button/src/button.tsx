@@ -8,12 +8,19 @@ export default defineComponent({
     // 它将从props 组件选项推断类型
     // setup(props, { slots })
     setup(props: ButtonProps, { slots }){
-        const { type, size } = toRefs(props)
+        const { type, size, disabled } = toRefs(props)
 
         return () => {
             const defaultSlots = slots.default?slots.default():'按钮'
 
-            return <button class={`s-btn s-btn--${type.value} s-btn--${size.value}`}> { defaultSlots } </button>
+            return (
+                <button 
+                    disabled={ disabled.value }
+                    class={`s-btn s-btn--${type.value} s-btn--${size.value}`}
+                >
+                    { defaultSlots } 
+                </button>
+            )
         }
     }
 })
