@@ -30,7 +30,9 @@ const oncclick=()=>{
   4、块级block
   5、iconbutton -->
   
-  <SButton type="primary">确定</SButton>
+  <SButton type="primary" size="small">确定</SButton>
+  <SButton type="primary" size="medium">确定</SButton>
+  <SButton type="primary" size="large">确定</SButton>
 </template>
 
 <style>
