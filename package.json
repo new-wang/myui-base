@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress dev build",
-    "docs:serve": "vitepress dev serve"
+    "docs:serve": "vitepress dev serve",
+    "test": "vitest"
   },
   "dependencies": {
     "vue": "^3.2.25"
