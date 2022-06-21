@@ -24,7 +24,13 @@ const oncclick=()=>{
     </template>
   </Test>
 
+  <!-- 1、primary,secondary,text
+  2、尺寸size
+  3、disabled
+  4、块级block
+  5、iconbutton -->
   
+  <SButton>确定</SButton>
 </template>
 
 <style>
